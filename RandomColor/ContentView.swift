@@ -8,54 +8,80 @@
 import SwiftUI
 import SwiftData
 
-struct ContentView: View {
-    @Environment(\.modelContext) private var modelContext
-    @Query private var items: [Item]
+class ContentViewModel: ObservableObject {
+    @Published var backgroundColor: Color = .white
+    @Published var copiedmessage: String? = ""
+    
+    
+    
+    
+    func randomColorGen() -> Color{
+        Color.init(hue: Double.random(in: 0...1), saturation: Double.random(in: 0...1), brightness: Double.random(in: 0...1))
+    }
+}
 
+struct ContentView : View {
+    @StateObject private var viewModel = ContentViewModel()
     var body: some View {
-        NavigationSplitView {
-            List {
-                ForEach(items) { item in
-                    NavigationLink {
-                        Text("Item at \(item.timestamp, format: Date.FormatStyle(date: .numeric, time: .standard))")
-                    } label: {
-                        Text(item.timestamp, format: Date.FormatStyle(date: .numeric, time: .standard))
-                    }
-                }
-                .onDelete(perform: deleteItems)
+        
+        HStack(spacing: 20) {
+            Text(viewModel.backgroundColor.toHexString())
+                .fontWeight(Font.Weight.black)
+                .font(.headline)
+            // Display an SF Symbol
+            
+            Button(action: {
+                UIPasteboard.general.string = viewModel.backgroundColor.toHexString()
+                viewModel.copiedmessage = "Color copied to clipboard!"
+                DispatchQueue.main.asyncAfter(deadline: .now() + 2, execute: {
+                    viewModel.copiedmessage = ""
+                    
+                })
+                
+            }){
+                // Icon for the button
+                Image(systemName: "pencil.and.list.clipboard")
+                    .resizable()
+                    .scaledToFit()
+                    .frame(width: 25, height: 25)
+                    .foregroundColor(.black)
+                    
             }
-            .toolbar {
-                ToolbarItem(placement: .navigationBarTrailing) {
-                    EditButton()
-                }
-                ToolbarItem {
-                    Button(action: addItem) {
-                        Label("Add Item", systemImage: "plus")
-                    }
-                }
+            
+            if let message = viewModel.copiedmessage{
+                Text(message)
+                    .font(.caption)
+                
             }
-        } detail: {
-            Text("Select an item")
+            
+            
+            
         }
-    }
+       
+       
+        viewModel.backgroundColor.ignoresSafeArea()
 
-    private func addItem() {
-        withAnimation {
-            let newItem = Item(timestamp: Date())
-            modelContext.insert(newItem)
-        }
-    }
-
-    private func deleteItems(offsets: IndexSet) {
-        withAnimation {
-            for index in offsets {
-                modelContext.delete(items[index])
+        //Text("All the colors to choose from!!!")
+            ZStack{
+                
+                Button("Generate a Random Color") {
+                    viewModel.backgroundColor = viewModel.randomColorGen()
+                }
+                    .buttonStyle(.borderedProminent)
+                    .buttonBorderShape(.roundedRectangle)
+                    .controlSize(.large)
+                
+          
             }
         }
-    }
+    
+    
+    
+    //helper method
+   
+    
+   
+    
+    
 }
 
-#Preview {
-    ContentView()
-        .modelContainer(for: Item.self, inMemory: true)
-}
