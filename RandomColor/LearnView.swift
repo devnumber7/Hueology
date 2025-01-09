@@ -57,12 +57,13 @@ struct ColorTheoryView: View {
                 • Concepts like complementary, analogous, and triadic color schemes
                 • Methods to balance contrast, warmth, and coolness
                 """)
+                .fontWeight(.medium)
                 
                 /// Section heading for the psychological impact of colors.
                 Text("Color and Psychology")
                     .font(.title2)
                     .fontWeight(.semibold)
-                    .foregroundColor(.black)
+                
                 
                 /// Explanation of how different colors affect human emotions and behaviors.
                 Text("""
@@ -74,12 +75,13 @@ struct ColorTheoryView: View {
                 
                 These emotional associations are used in marketing, design, and branding to subtly guide consumer behavior and shape mood.
                 """)
+                .fontWeight(.medium)
+
                 
                 /// Section heading for the scientific understanding of color.
                 Text("Scientific Basis of Color")
                     .font(.title2)
                     .fontWeight(.semibold)
-                    .foregroundColor(.black)
                 
                 /// Description of the physical and biological aspects of color perception.
                 Text("""
@@ -89,12 +91,13 @@ struct ColorTheoryView: View {
                 • The human eye contains **cones** that perceive color (red, green, blue) and **rods** that detect light intensity.
                 • Different color models exist (RGB, CMYK, HSB, etc.) for various applications in art, printing, and digital displays.
                 """)
+                .fontWeight(.medium)
+
                 
                 /// Section heading for the artistic use of color.
                 Text("Artistic Relationship to Color")
                     .font(.title2)
                     .fontWeight(.semibold)
-                    .foregroundColor(.black)
                 
                 /// Explanation of how artists utilize color theory to convey emotions and meanings.
                 Text("""
@@ -104,12 +107,13 @@ struct ColorTheoryView: View {
                 • **Fauvism**: Henri Matisse and others employed bold, vibrant colors for emotional expression.
                 • **Expressionism**: Color was used to represent deep emotional states rather than realistic scenes.
                 """)
+                .fontWeight(.medium)
+
                 
                 /// Example section demonstrating complementary colors with visual representations.
                 VStack(alignment: .leading, spacing: 10) {
                     Text("Example: Complementary Colors")
                         .font(.headline)
-                        .foregroundColor(.black)
                     
                     /// Display of colored circles representing complementary colors.
                     HStack {
@@ -144,7 +148,6 @@ struct ColorTheoryView: View {
                 Text("Interactive Color Playground")
                     .font(.title2)
                     .fontWeight(.semibold)
-                    .foregroundColor(.black)
                 
                 /// Instructional text guiding users to interact with color sliders.
                 Text("""
