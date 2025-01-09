@@ -24,15 +24,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		BEDE5FAA2D2DC43E0057E49C /* RandomColor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RandomColor.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		BEDE5FBC2D2DC4420057E49C /* RandomColorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RandomColorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		BEDE5FC62D2DC4430057E49C /* RandomColorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RandomColorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BEDE5FAA2D2DC43E0057E49C /* Hueology.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hueology.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BEDE5FBC2D2DC4420057E49C /* HueologyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HueologyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BEDE5FC62D2DC4430057E49C /* HueologyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HueologyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		BEDE5FAC2D2DC43E0057E49C /* RandomColor */ = {
+		BEDE5FAC2D2DC43E0057E49C /* Huelogy */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			path = RandomColor;
+			path = Huelogy;
 			sourceTree = "<group>";
 		};
 		BEDE5FBF2D2DC4430057E49C /* RandomColorTests */ = {
@@ -75,7 +75,7 @@
 		BEDE5FA12D2DC43E0057E49C = {
 			isa = PBXGroup;
 			children = (
-				BEDE5FAC2D2DC43E0057E49C /* RandomColor */,
+				BEDE5FAC2D2DC43E0057E49C /* Huelogy */,
 				BEDE5FBF2D2DC4430057E49C /* RandomColorTests */,
 				BEDE5FC92D2DC4430057E49C /* RandomColorUITests */,
 				BEDE5FAB2D2DC43E0057E49C /* Products */,
@@ -85,9 +85,9 @@
 		BEDE5FAB2D2DC43E0057E49C /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				BEDE5FAA2D2DC43E0057E49C /* RandomColor.app */,
-				BEDE5FBC2D2DC4420057E49C /* RandomColorTests.xctest */,
-				BEDE5FC62D2DC4430057E49C /* RandomColorUITests.xctest */,
+				BEDE5FAA2D2DC43E0057E49C /* Hueology.app */,
+				BEDE5FBC2D2DC4420057E49C /* HueologyTests.xctest */,
+				BEDE5FC62D2DC4430057E49C /* HueologyUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -95,9 +95,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		BEDE5FA92D2DC43E0057E49C /* RandomColor */ = {
+		BEDE5FA92D2DC43E0057E49C /* Hueology */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = BEDE5FD02D2DC4430057E49C /* Build configuration list for PBXNativeTarget "RandomColor" */;
+			buildConfigurationList = BEDE5FD02D2DC4430057E49C /* Build configuration list for PBXNativeTarget "Hueology" */;
 			buildPhases = (
 				BEDE5FA62D2DC43E0057E49C /* Sources */,
 				BEDE5FA72D2DC43E0057E49C /* Frameworks */,
@@ -108,18 +108,18 @@
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
-				BEDE5FAC2D2DC43E0057E49C /* RandomColor */,
+				BEDE5FAC2D2DC43E0057E49C /* Huelogy */,
 			);
-			name = RandomColor;
+			name = Hueology;
 			packageProductDependencies = (
 			);
 			productName = RandomColor;
-			productReference = BEDE5FAA2D2DC43E0057E49C /* RandomColor.app */;
+			productReference = BEDE5FAA2D2DC43E0057E49C /* Hueology.app */;
 			productType = "com.apple.product-type.application";
 		};
-		BEDE5FBB2D2DC4420057E49C /* RandomColorTests */ = {
+		BEDE5FBB2D2DC4420057E49C /* HueologyTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = BEDE5FD32D2DC4430057E49C /* Build configuration list for PBXNativeTarget "RandomColorTests" */;
+			buildConfigurationList = BEDE5FD32D2DC4430057E49C /* Build configuration list for PBXNativeTarget "HueologyTests" */;
 			buildPhases = (
 				BEDE5FB82D2DC4420057E49C /* Sources */,
 				BEDE5FB92D2DC4420057E49C /* Frameworks */,
@@ -133,16 +133,16 @@
 			fileSystemSynchronizedGroups = (
 				BEDE5FBF2D2DC4430057E49C /* RandomColorTests */,
 			);
-			name = RandomColorTests;
+			name = HueologyTests;
 			packageProductDependencies = (
 			);
 			productName = RandomColorTests;
-			productReference = BEDE5FBC2D2DC4420057E49C /* RandomColorTests.xctest */;
+			productReference = BEDE5FBC2D2DC4420057E49C /* HueologyTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		BEDE5FC52D2DC4430057E49C /* RandomColorUITests */ = {
+		BEDE5FC52D2DC4430057E49C /* HueologyUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = BEDE5FD62D2DC4430057E49C /* Build configuration list for PBXNativeTarget "RandomColorUITests" */;
+			buildConfigurationList = BEDE5FD62D2DC4430057E49C /* Build configuration list for PBXNativeTarget "HueologyUITests" */;
 			buildPhases = (
 				BEDE5FC22D2DC4430057E49C /* Sources */,
 				BEDE5FC32D2DC4430057E49C /* Frameworks */,
@@ -156,11 +156,11 @@
 			fileSystemSynchronizedGroups = (
 				BEDE5FC92D2DC4430057E49C /* RandomColorUITests */,
 			);
-			name = RandomColorUITests;
+			name = HueologyUITests;
 			packageProductDependencies = (
 			);
 			productName = RandomColorUITests;
-			productReference = BEDE5FC62D2DC4430057E49C /* RandomColorUITests.xctest */;
+			productReference = BEDE5FC62D2DC4430057E49C /* HueologyUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -186,7 +186,7 @@
 					};
 				};
 			};
-			buildConfigurationList = BEDE5FA52D2DC43E0057E49C /* Build configuration list for PBXProject "RandomColor" */;
+			buildConfigurationList = BEDE5FA52D2DC43E0057E49C /* Build configuration list for PBXProject "Hueology" */;
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -200,9 +200,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				BEDE5FA92D2DC43E0057E49C /* RandomColor */,
-				BEDE5FBB2D2DC4420057E49C /* RandomColorTests */,
-				BEDE5FC52D2DC4430057E49C /* RandomColorUITests */,
+				BEDE5FA92D2DC43E0057E49C /* Hueology */,
+				BEDE5FBB2D2DC4420057E49C /* HueologyTests */,
+				BEDE5FC52D2DC4430057E49C /* HueologyUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -258,12 +258,12 @@
 /* Begin PBXTargetDependency section */
 		BEDE5FBE2D2DC4420057E49C /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = BEDE5FA92D2DC43E0057E49C /* RandomColor */;
+			target = BEDE5FA92D2DC43E0057E49C /* Hueology */;
 			targetProxy = BEDE5FBD2D2DC4420057E49C /* PBXContainerItemProxy */;
 		};
 		BEDE5FC82D2DC4430057E49C /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = BEDE5FA92D2DC43E0057E49C /* RandomColor */;
+			target = BEDE5FA92D2DC43E0057E49C /* Hueology */;
 			targetProxy = BEDE5FC72D2DC4430057E49C /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -395,7 +395,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"RandomColor/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"/Users/aryanpalit/Hueology/Huelogy/Preview Content\"";
 				DEVELOPMENT_TEAM = 9S67Y6QRQ2;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -411,14 +411,15 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "Indie-kreator.RandomColor";
+				PRODUCT_BUNDLE_IDENTIFIER = "Indie-kreator.Hueology";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -429,7 +430,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"RandomColor/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"/Users/aryanpalit/Hueology/Huelogy/Preview Content\"";
 				DEVELOPMENT_TEAM = 9S67Y6QRQ2;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -445,14 +446,15 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "Indie-kreator.RandomColor";
+				PRODUCT_BUNDLE_IDENTIFIER = "Indie-kreator.Hueology";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -471,7 +473,7 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RandomColor.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/RandomColor";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Hueology.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Hueology";
 			};
 			name = Debug;
 		};
@@ -490,7 +492,7 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RandomColor.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/RandomColor";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Hueology.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Hueology";
 			};
 			name = Release;
 		};
@@ -531,7 +533,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		BEDE5FA52D2DC43E0057E49C /* Build configuration list for PBXProject "RandomColor" */ = {
+		BEDE5FA52D2DC43E0057E49C /* Build configuration list for PBXProject "Hueology" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				BEDE5FCE2D2DC4430057E49C /* Debug */,
@@ -540,7 +542,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		BEDE5FD02D2DC4430057E49C /* Build configuration list for PBXNativeTarget "RandomColor" */ = {
+		BEDE5FD02D2DC4430057E49C /* Build configuration list for PBXNativeTarget "Hueology" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				BEDE5FD12D2DC4430057E49C /* Debug */,
@@ -549,7 +551,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		BEDE5FD32D2DC4430057E49C /* Build configuration list for PBXNativeTarget "RandomColorTests" */ = {
+		BEDE5FD32D2DC4430057E49C /* Build configuration list for PBXNativeTarget "HueologyTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				BEDE5FD42D2DC4430057E49C /* Debug */,
@@ -558,7 +560,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		BEDE5FD62D2DC4430057E49C /* Build configuration list for PBXNativeTarget "RandomColorUITests" */ = {
+		BEDE5FD62D2DC4430057E49C /* Build configuration list for PBXNativeTarget "HueologyUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				BEDE5FD72D2DC4430057E49C /* Debug */,
