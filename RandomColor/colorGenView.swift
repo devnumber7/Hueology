@@ -20,7 +20,7 @@ class ContentViewModel: ObservableObject {
     }
 }
 
-struct ContentView : View {
+struct colorGen : View {
     @StateObject private var viewModel = ContentViewModel()
     var body: some View {
         
@@ -75,13 +75,9 @@ struct ContentView : View {
             }
         }
     
-    
-    
-    //helper method
-   
-    
-   
-    
-    
 }
 
+
+#Preview{
+    colorGen()
+}
