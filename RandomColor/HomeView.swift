@@ -22,13 +22,14 @@ struct HomeView: View {
     var body: some View {
             NavigationView {
                 ScrollView {
-                    LazyVGrid(columns: columns, spacing: 16) {
+
+                    LazyVGrid(columns: columns, alignment: .center, spacing: 28) {
                         ForEach(0..<items.count, id: \.self) { index in
                             let item = items[index]
                             NavigationLink(destination: item.1) {
-                                Text(item.0) // Display the title
+                                Text(item.0)
                                     .frame(maxWidth: .infinity, minHeight: 50)
-                                    .background(Color.gray.opacity(0.2))
+                                  
                                     .cornerRadius(8)
                                     .foregroundColor(.black)
                                     .fontWeight(.bold)

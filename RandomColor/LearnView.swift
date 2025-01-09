@@ -34,7 +34,7 @@ struct ColorTheoryView: View {
                 
                 // MARK: - Title
                 Text("Introduction to Color Theory")
-                    .font(.largeTitle)
+                    .font(.title)
                     .fontWeight(.bold)
                     .foregroundColor(.black)
                     .padding(.top)
@@ -51,6 +51,7 @@ struct ColorTheoryView: View {
                 • Concepts like complementary, analogous, and triadic color schemes
                 • Methods to balance contrast, warmth, and coolness
                 """)
+                
                 
                 // MARK: - Color and Psychology
                 Text("Color and Psychology")
@@ -177,7 +178,7 @@ struct ColorTheoryView: View {
             }
             .padding()
         }
-        .navigationTitle("Color Theory")
+   
     }
 }
 
