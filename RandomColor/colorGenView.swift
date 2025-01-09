@@ -8,17 +8,25 @@
 import SwiftUI
 import SwiftData
 
+
+/// A view model that manages the state and logic for generating and copying random colors.
 class ContentViewModel: ObservableObject {
+    /// The current background color displayed in the view.
     @Published var backgroundColor: Color = .white
+    
+    /// An optional message displayed when a color is copied to the clipboard.
     @Published var copiedmessage: String? = ""
     
     
     
-    
+    /// Generates a random color with random hue, saturation, and brightness values.
+        ///
+    /// - Returns: A `Color` instance with random hue, saturation, and brightness.
     func randomColorGen() -> Color{
         Color.init(hue: Double.random(in: 0...1), saturation: Double.random(in: 0...1), brightness: Double.random(in: 0...1))
     }
 }
+
 
 struct colorGenView : View {
     @StateObject private var viewModel = ContentViewModel()
@@ -44,7 +52,7 @@ struct colorGenView : View {
                     .resizable()
                     .scaledToFit()
                     .frame(width: 25, height: 25)
-                    .foregroundColor(.black)
+               
                     
             }
             
