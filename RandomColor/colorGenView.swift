@@ -20,7 +20,7 @@ class ContentViewModel: ObservableObject {
     }
 }
 
-struct colorGen : View {
+struct colorGenView : View {
     @StateObject private var viewModel = ContentViewModel()
     var body: some View {
         
@@ -70,14 +70,16 @@ struct colorGen : View {
                     .buttonStyle(.borderedProminent)
                     .buttonBorderShape(.roundedRectangle)
                     .controlSize(.large)
+                    .fontWeight(.black)
                 
           
             }
+            .navigationBarBackButtonHidden(false)
+        
         }
-    
 }
 
 
 #Preview{
-    colorGen()
+    colorGenView()
 }
