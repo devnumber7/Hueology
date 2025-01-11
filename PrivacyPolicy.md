@@ -1,5 +1,5 @@
 # Privacy Policy for Hueology  
-_Last Updated: [Insert Date]_  
+_Last Updated: January 10 2025_  
 
 ---
 
@@ -14,8 +14,6 @@ Since we do not collect personal information, all app features and settings oper
 
 - Your color configurations (hue, saturation, brightness).  
 - Saved palettes, if supported in the future.  
-
-Any data generated is solely for improving your user experience within the app.
 
 ---
 
@@ -39,7 +37,7 @@ We may update this Privacy Policy to reflect improvements in the app or changes 
 
 ## 6. Contact Us  
 If you have any questions or concerns about this Privacy Policy or the app, please contact us at:  
-**Email**: [your-email@example.com]  
+**Email**: deep182005@gmail.com  
 
 ---
 
